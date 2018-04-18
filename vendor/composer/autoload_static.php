@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc3cd27964cca0223318fa57d09b3b726
+class ComposerStaticInit853b38c78cdb2c6ce1c7792a1424c7c9
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -98,7 +98,6 @@ class ComposerStaticInitc3cd27964cca0223318fa57d09b3b726
         'C' => 
         array (
             'Cron\\' => 5,
-            'Carbon\\' => 7,
         ),
         'A' => 
         array (
@@ -261,14 +260,14 @@ class ComposerStaticInitc3cd27964cca0223318fa57d09b3b726
         array (
             0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron',
         ),
-        'Carbon\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
-        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -1729,6 +1728,7 @@ class ComposerStaticInitc3cd27964cca0223318fa57d09b3b726
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+        'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -3632,10 +3632,11 @@ class ComposerStaticInitc3cd27964cca0223318fa57d09b3b726
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc3cd27964cca0223318fa57d09b3b726::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc3cd27964cca0223318fa57d09b3b726::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc3cd27964cca0223318fa57d09b3b726::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitc3cd27964cca0223318fa57d09b3b726::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit853b38c78cdb2c6ce1c7792a1424c7c9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit853b38c78cdb2c6ce1c7792a1424c7c9::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit853b38c78cdb2c6ce1c7792a1424c7c9::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit853b38c78cdb2c6ce1c7792a1424c7c9::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit853b38c78cdb2c6ce1c7792a1424c7c9::$classMap;
 
         }, null, ClassLoader::class);
     }
