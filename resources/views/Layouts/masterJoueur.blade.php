@@ -10,6 +10,6 @@
 <title></title>
 </head>
 <body>
-    @yield('container')
+    @yield('menu')
 </body>
 </html>

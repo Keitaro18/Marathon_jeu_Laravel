@@ -1,1 +1,2 @@
-@extends('Layouts._navJoueur')
+@extends('masterJoueur')
+@extends('Layouts/section')
