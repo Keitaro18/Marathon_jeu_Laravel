@@ -1166,6 +1166,7 @@
     },
     {
         "name": "nesbot/carbon",
+<<<<<<< HEAD
         "version": "1.26.4",
         "version_normalized": "1.26.4.0",
         "source": {
@@ -1177,6 +1178,19 @@
             "type": "zip",
             "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e3d9014279133a3cccc01f6a691322a2d5a6a87b",
             "reference": "e3d9014279133a3cccc01f6a691322a2d5a6a87b",
+=======
+        "version": "1.26.3",
+        "version_normalized": "1.26.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/briannesbitt/Carbon.git",
+            "reference": "b63c0d809256a434ea74e6b41ca5f5f9d16220e6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/b63c0d809256a434ea74e6b41ca5f5f9d16220e6",
+            "reference": "b63c0d809256a434ea74e6b41ca5f5f9d16220e6",
+>>>>>>> 5050d0852768ad59f1284d1581e60e7665b4a6f2
             "shasum": ""
         },
         "require": {
@@ -1187,7 +1201,11 @@
             "friendsofphp/php-cs-fixer": "~2",
             "phpunit/phpunit": "^4.8.35 || ^5.7"
         },
+<<<<<<< HEAD
         "time": "2018-04-17T15:35:42+00:00",
+=======
+        "time": "2018-04-16T14:54:26+00:00",
+>>>>>>> 5050d0852768ad59f1284d1581e60e7665b4a6f2
         "type": "library",
         "installation-source": "dist",
         "autoload": {
