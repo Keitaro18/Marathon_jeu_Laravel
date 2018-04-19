@@ -12,16 +12,12 @@
 // BY JORDAN \\
 //--------Dans la page d'accueil pour joueur ou admin-----
 // Page d'acceuil
-Route::get('/', function() {
- $name = 'Accueil';
 
-return view('index');
+// include: Bienvenue + Code du joueur
+Route::get('/', function() {
+    return view('Joueur.accueil');
 });
 //--------Les pages Joueurs-------//
-// include: Bienvenue + Code du joueur
-Route::get('/Accueil', function() {
-return view('Joueur.accueil');
-});
 // include:Inscription
 Route::get('/Inscription', function() {
 return view('Joueur.inscription');
