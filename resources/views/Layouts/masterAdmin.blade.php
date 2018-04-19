@@ -10,6 +10,20 @@
 <title></title>
 </head>
 <body>
-    @yield('containerAdmin')
+    {{-- Menu sur les pages joueur --}}
+    <div class="container-fluid d-flex flex-md-nowrap">
+            <header class="d-inline flex-row">
+                <img src="img/Logo.png" class="logo" alt="logo">
+            </header>
+    </div>   
+    <div class="button">
+        <button type="button" class="btn btn-danger ">Base de données</button>
+        <button type="button" class="btn btn-danger ">Gestion des Jeux</button>
+        <button type="button" class="btn btn-danger ">Fin du Marathon</button>
+    </div>     
+        
+            {{-- Contenu de la page Joueur --}}
+    @yield('contenuJoueur')
+    
 </body>
 </html>
