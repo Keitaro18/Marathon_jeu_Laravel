@@ -23,3 +23,46 @@ img.LogoMarathon
     margin-top: 80px;
     margin-left: 100px;
 }
+
+.contenu
+{
+    display: flex;
+    text-align: center;
+}
+
+.contenu input
+{
+    height: 35px;
+    width: 200px;
+}
+
+.contenu button
+{
+    margin-top: 200px;
+    margin-left: 10px;
+    height: 35px;
+    width: 70px;
+    padding: 0px;
+}
+
+.contenu p 
+{
+    font-size: 20px;
+}
+
+.contenu form
+{
+    display: flex;
+}
+
+p
+{
+    margin-left: 150px;
+    margin-top: 200px;
+}
+
+input
+{
+    margin-top: 200px;
+    margin-left: 50px;
+}

@@ -2,5 +2,19 @@
 
 
 @section('contenuJoueur')
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque velit odit tempore perspiciatis aliquam, eos explicabo neque, aperiam a nemo, modi laborum laudantium officiis repellat rerum saepe ad beatae cumque?</p>
+    <p> Bienvenue , pour commencer le Marathon veuillez scanner votre carte !</p>
+    
+    <form action="post">
+        <input type="text" class='form-control' id="code" maxlength="6" placeholder="Scanner votre carte">
+        <button class="btn btn-danger" id='code' type="button">Valider</button>
+    </form>    
 @stop
+
+<?php
+
+if (($_POST['code'] <= 100000) && ($_POST['code'] >= 101000 )){
+
+        
+        header ('location : inscription');
+    }
+?>       
