@@ -10,9 +10,6 @@
 <title></title>
 </head>
 <body>
-<<<<<<< HEAD
-    @yield('container')
-=======
     {{-- Menu sur les pages joueur --}}
     <div class="container-fluid d-flex flex-md-nowrap">
             <header class="d-inline flex-row">
@@ -27,6 +24,5 @@
     {{-- Contenu de la page Joueur --}}
     @yield('contenuJoueur')
     </div>
->>>>>>> 5050d0852768ad59f1284d1581e60e7665b4a6f2
 </body>
 </html>
