@@ -4,17 +4,18 @@
 @section('contenuJoueur')
     <p> Bienvenue , pour commencer le Marathon veuillez scanner votre carte !</p>
     
-    <form action="post">
-        <input type="text" class='form-control' id="code" maxlength="6" placeholder="Scanner votre carte">
-        <button class="btn btn-danger" id='code' type="button">Valider</button>
-    </form>    
+    {!! csrf_field() !!} 
+    
+    <form method="POST" action="" accept-charset="UTF-8">
+
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        
+        <input type="text" class="form-control" name="code" maxlength="6" placeholder="Scanner votre carte">
+        
+        <input class="btn btn-danger" type="submit">Valider</button>
+    
+    </form> 
 @stop
 
-<?php
 
-if (($_POST['code'] <= 100000) && ($_POST['code'] >= 101000 )){
 
-        
-        header ('location : inscription');
-    }
-?>       
