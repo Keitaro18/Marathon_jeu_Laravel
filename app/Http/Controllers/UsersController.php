@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Illuminate\Support\Facades\Validator;
 
 class UsersController extends Controller
 {
@@ -19,5 +20,7 @@ class UsersController extends Controller
         {
             return view('Joueur.inscription');
         }
+        return view('Joueur.accueil');
     }
+
 }

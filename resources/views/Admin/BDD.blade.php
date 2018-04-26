@@ -1,6 +1,7 @@
 @extends('Layouts.masterAdmin')
 
 
+<<<<<<< HEAD
 @section('contenuAdmin')
     <form action="" >
         {{-- <input type="number" name="" id="" min = "0" max = "500" placeholder = "Nombre joueurs">
@@ -44,3 +45,8 @@
     
     ?>
     @stop
+=======
+@section('contenuJoueur')
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque velit odit tempore perspiciatis aliquam, eos explicabo neque, aperiam a nemo, modi laborum laudantium officiis repellat rerum saepe ad beatae cumque?</p>
+@stop
+>>>>>>> origin/keitaro
