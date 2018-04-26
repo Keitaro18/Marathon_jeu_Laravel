@@ -9,19 +9,18 @@ class UsersController extends Controller
 {
     public function create()
     {
+        return view('accueil');
+    }
+
+    public function store()
+    {
+        $code = request('code');
+
+        if($code >= 100000 AND $code <= 101000)
+        {
+            return view('Joueur.inscription');
+        }
         return view('Joueur.accueil');
     }
 
-    public function store(Request $request)
-    {
-        $code = App\Code::where('code', request('url'))->get(); 
-
-        if($request >= 100000 AND $request <= 101000){
-                return view('Joueur.inscription');
-        }
-
-        //valider le code identifiant
-
-
-    }
 }

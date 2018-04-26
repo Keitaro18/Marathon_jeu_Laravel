@@ -10,7 +10,11 @@
 <title></title>
 </head>
 <body>
+<<<<<<< HEAD
+    {{-- Menu sur les pages Admin --}}
+=======
     {{-- Menu sur les pages joueur --}}
+>>>>>>> origin/keitaro
     <div class="container-fluid d-flex flex-md-nowrap">
             <header class="d-inline flex-row">
                 <img src="img/Logo.png" class="logo" alt="logo">
@@ -22,8 +26,13 @@
         <button type="button" class="btn btn-danger ">Fin du Marathon</button>
     </div>     
         
+<<<<<<< HEAD
+            {{-- Contenu de la page Admin --}}
+    @yield('contenuAdmin')
+=======
             {{-- Contenu de la page Joueur --}}
     @yield('contenuJoueur')
+>>>>>>> origin/keitaro
     
 </body>
 </html>
