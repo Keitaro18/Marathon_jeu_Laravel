@@ -10,7 +10,7 @@
 <title></title>
 </head>
 <body>
-    {{-- Menu sur les pages joueur --}}
+    
     <div class="container-fluid d-flex flex-md-nowrap">
             <header class="d-inline flex-row">
                 <img src="img/Logo.png" class="logo" alt="logo">
@@ -21,8 +21,8 @@
             <img src="img/Marathon.jpg" class="LogoMarathon" alt="logoMarathon">
             
     
-    {{-- Contenu de la page Joueur --}}
-    @yield('contenuJoueur')
+    
+    <?php echo $__env->yieldContent('contenuJoueur'); ?>
     </div>
 </body>
 </html>
